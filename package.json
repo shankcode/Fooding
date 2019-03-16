@@ -1,0 +1,26 @@
+{
+  "name": "fooding",
+  "version": "1.0.0",
+  "description": "A MERN App to Input food details by the user",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix fooding && npm run build --prefix fooding"
+  },
+  "keywords": [
+    "Food"
+  ],
+  "author": "Shashank Yadav",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "web-push": "^3.3.3"
+  },
+  "engines": {
+    "node": "10.15.3"
+  }
+}

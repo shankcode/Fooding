@@ -1,0 +1,244 @@
+.home-wrapper .feedback-field,
+.home-wrapper .updateFeedback,
+.home-wrapper .successFeedback {
+  color: #f35213;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.home-wrapper .bg-image {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0)), to(rgba(12, 12, 12, 0.692))), url("./food.jpg");
+  background-image: linear-gradient(to bottom, rgba(3, 3, 3, 0), rgba(12, 12, 12, 0.692)), url("./food.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+.home-wrapper .bg-image .input-fields {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.home-wrapper .bg-image .input-fields h1 {
+  -webkit-animation: moveInLeft 1s ease-out;
+          animation: moveInLeft 1s ease-out;
+}
+
+.home-wrapper .bg-image .input-fields h1,
+.home-wrapper .bg-image .input-fields label {
+  color: #c1c1c1;
+}
+
+.home-wrapper .bg-image .input-fields label {
+  font-weight: 700;
+  -webkit-animation: moveInRight 1s ease-out;
+          animation: moveInRight 1s ease-out;
+}
+
+.home-wrapper .bg-image .input-fields button {
+  -webkit-animation: moveUp 1s ease-out;
+          animation: moveUp 1s ease-out;
+  -webkit-box-shadow: 0 2px 50px #2b2a2a;
+          box-shadow: 0 2px 50px #2b2a2a;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.home-wrapper .bg-image .input-fields button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.home-wrapper .bg-image .input-fields button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.home-wrapper .food_cards_wrapper {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.home-wrapper .food_cards_wrapper .food_card {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.home-wrapper .food_cards_wrapper .food_card .header {
+  padding: 5px;
+}
+
+.home-wrapper .food_cards_wrapper .food_card .header h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.home-wrapper .food_cards_wrapper .food_card .header button {
+  font-weight: bold;
+}
+
+.home-wrapper .food_cards_wrapper .food_card .body {
+  padding: 13px;
+}
+
+.home-wrapper .food_cards_wrapper .added_food_animation {
+  -webkit-animation: slide-down 0.7s ease;
+          animation: slide-down 0.7s ease;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-image {
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 18, 18, 0.637)), to(rgba(12, 12, 12, 0.61))), url("./mobile_food.jpg") !important;
+    background-image: linear-gradient(to top, rgba(22, 18, 18, 0.637), rgba(12, 12, 12, 0.61)), url("./mobile_food.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+  }
+  .bg-image .input-fields {
+    margin-top: 15px;
+    position: absolute;
+    top: 45% !important;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
